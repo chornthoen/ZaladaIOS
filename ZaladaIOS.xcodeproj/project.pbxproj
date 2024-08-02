@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0619ADD2C5C847E0062A941 /* ZaladaIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619ADC2C5C847E0062A941 /* ZaladaIOSApp.swift */; };
+		B0619ADF2C5C847E0062A941 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619ADE2C5C847E0062A941 /* ContentView.swift */; };
+		B0619AE12C5C84800062A941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0619AE02C5C84800062A941 /* Assets.xcassets */; };
+		B0619AE42C5C84800062A941 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0619AE32C5C84800062A941 /* Preview Assets.xcassets */; };
+		B0619AE62C5C84800062A941 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619AE52C5C84800062A941 /* Persistence.swift */; };
+		B0619AE92C5C84800062A941 /* ZaladaIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0619AE72C5C84800062A941 /* ZaladaIOS.xcdatamodeld */; };
+		B0619AF32C5C84800062A941 /* ZaladaIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619AF22C5C84800062A941 /* ZaladaIOSTests.swift */; };
+		B0619AFD2C5C84800062A941 /* ZaladaIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619AFC2C5C84800062A941 /* ZaladaIOSUITests.swift */; };
+		B0619AFF2C5C84800062A941 /* ZaladaIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619AFE2C5C84800062A941 /* ZaladaIOSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0619AEF2C5C84800062A941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0619AD12C5C847E0062A941 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0619AD82C5C847E0062A941;
+			remoteInfo = ZaladaIOS;
+		};
+		B0619AF92C5C84800062A941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0619AD12C5C847E0062A941 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0619AD82C5C847E0062A941;
+			remoteInfo = ZaladaIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B0619AD92C5C847E0062A941 /* ZaladaIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZaladaIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0619ADC2C5C847E0062A941 /* ZaladaIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaladaIOSApp.swift; sourceTree = "<group>"; };
+		B0619ADE2C5C847E0062A941 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B0619AE02C5C84800062A941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0619AE32C5C84800062A941 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B0619AE52C5C84800062A941 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		B0619AE82C5C84800062A941 /* ZaladaIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZaladaIOS.xcdatamodel; sourceTree = "<group>"; };
+		B0619AEE2C5C84800062A941 /* ZaladaIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZaladaIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0619AF22C5C84800062A941 /* ZaladaIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaladaIOSTests.swift; sourceTree = "<group>"; };
+		B0619AF82C5C84800062A941 /* ZaladaIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZaladaIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0619AFC2C5C84800062A941 /* ZaladaIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaladaIOSUITests.swift; sourceTree = "<group>"; };
+		B0619AFE2C5C84800062A941 /* ZaladaIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaladaIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0619AD62C5C847E0062A941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0619AEB2C5C84800062A941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0619AF52C5C84800062A941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0619AD02C5C847E0062A941 = {
+			isa = PBXGroup;
+			children = (
+				B0619ADB2C5C847E0062A941 /* ZaladaIOS */,
+				B0619AF12C5C84800062A941 /* ZaladaIOSTests */,
+				B0619AFB2C5C84800062A941 /* ZaladaIOSUITests */,
+				B0619ADA2C5C847E0062A941 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0619ADA2C5C847E0062A941 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0619AD92C5C847E0062A941 /* ZaladaIOS.app */,
+				B0619AEE2C5C84800062A941 /* ZaladaIOSTests.xctest */,
+				B0619AF82C5C84800062A941 /* ZaladaIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0619ADB2C5C847E0062A941 /* ZaladaIOS */ = {
+			isa = PBXGroup;
+			children = (
+				B0619ADC2C5C847E0062A941 /* ZaladaIOSApp.swift */,
+				B0619ADE2C5C847E0062A941 /* ContentView.swift */,
+				B0619AE02C5C84800062A941 /* Assets.xcassets */,
+				B0619AE52C5C84800062A941 /* Persistence.swift */,
+				B0619AE72C5C84800062A941 /* ZaladaIOS.xcdatamodeld */,
+				B0619AE22C5C84800062A941 /* Preview Content */,
+			);
+			path = ZaladaIOS;
+			sourceTree = "<group>";
+		};
+		B0619AE22C5C84800062A941 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B0619AE32C5C84800062A941 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B0619AF12C5C84800062A941 /* ZaladaIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0619AF22C5C84800062A941 /* ZaladaIOSTests.swift */,
+			);
+			path = ZaladaIOSTests;
+			sourceTree = "<group>";
+		};
+		B0619AFB2C5C84800062A941 /* ZaladaIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B0619AFC2C5C84800062A941 /* ZaladaIOSUITests.swift */,
+				B0619AFE2C5C84800062A941 /* ZaladaIOSUITestsLaunchTests.swift */,
+			);
+			path = ZaladaIOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0619AD82C5C847E0062A941 /* ZaladaIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0619B022C5C84800062A941 /* Build configuration list for PBXNativeTarget "ZaladaIOS" */;
+			buildPhases = (
+				B0619AD52C5C847E0062A941 /* Sources */,
+				B0619AD62C5C847E0062A941 /* Frameworks */,
+				B0619AD72C5C847E0062A941 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZaladaIOS;
+			productName = ZaladaIOS;
+			productReference = B0619AD92C5C847E0062A941 /* ZaladaIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0619AED2C5C84800062A941 /* ZaladaIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0619B052C5C84800062A941 /* Build configuration list for PBXNativeTarget "ZaladaIOSTests" */;
+			buildPhases = (
+				B0619AEA2C5C84800062A941 /* Sources */,
+				B0619AEB2C5C84800062A941 /* Frameworks */,
+				B0619AEC2C5C84800062A941 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0619AF02C5C84800062A941 /* PBXTargetDependency */,
+			);
+			name = ZaladaIOSTests;
+			productName = ZaladaIOSTests;
+			productReference = B0619AEE2C5C84800062A941 /* ZaladaIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0619AF72C5C84800062A941 /* ZaladaIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0619B082C5C84800062A941 /* Build configuration list for PBXNativeTarget "ZaladaIOSUITests" */;
+			buildPhases = (
+				B0619AF42C5C84800062A941 /* Sources */,
+				B0619AF52C5C84800062A941 /* Frameworks */,
+				B0619AF62C5C84800062A941 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0619AFA2C5C84800062A941 /* PBXTargetDependency */,
+			);
+			name = ZaladaIOSUITests;
+			productName = ZaladaIOSUITests;
+			productReference = B0619AF82C5C84800062A941 /* ZaladaIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0619AD12C5C847E0062A941 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					B0619AD82C5C847E0062A941 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					B0619AED2C5C84800062A941 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = B0619AD82C5C847E0062A941;
+					};
+					B0619AF72C5C84800062A941 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = B0619AD82C5C847E0062A941;
+					};
+				};
+			};
+			buildConfigurationList = B0619AD42C5C847E0062A941 /* Build configuration list for PBXProject "ZaladaIOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0619AD02C5C847E0062A941;
+			productRefGroup = B0619ADA2C5C847E0062A941 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0619AD82C5C847E0062A941 /* ZaladaIOS */,
+				B0619AED2C5C84800062A941 /* ZaladaIOSTests */,
+				B0619AF72C5C84800062A941 /* ZaladaIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0619AD72C5C847E0062A941 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0619AE42C5C84800062A941 /* Preview Assets.xcassets in Resources */,
+				B0619AE12C5C84800062A941 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0619AEC2C5C84800062A941 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0619AF62C5C84800062A941 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0619AD52C5C847E0062A941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0619AE62C5C84800062A941 /* Persistence.swift in Sources */,
+				B0619ADF2C5C847E0062A941 /* ContentView.swift in Sources */,
+				B0619AE92C5C84800062A941 /* ZaladaIOS.xcdatamodeld in Sources */,
+				B0619ADD2C5C847E0062A941 /* ZaladaIOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0619AEA2C5C84800062A941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0619AF32C5C84800062A941 /* ZaladaIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0619AF42C5C84800062A941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0619AFD2C5C84800062A941 /* ZaladaIOSUITests.swift in Sources */,
+				B0619AFF2C5C84800062A941 /* ZaladaIOSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0619AF02C5C84800062A941 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0619AD82C5C847E0062A941 /* ZaladaIOS */;
+			targetProxy = B0619AEF2C5C84800062A941 /* PBXContainerItemProxy */;
+		};
+		B0619AFA2C5C84800062A941 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0619AD82C5C847E0062A941 /* ZaladaIOS */;
+			targetProxy = B0619AF92C5C84800062A941 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B0619B002C5C84800062A941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0619B012C5C84800062A941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0619B032C5C84800062A941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZaladaIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = thoen.com.ZaladaIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0619B042C5C84800062A941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZaladaIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = thoen.com.ZaladaIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0619B062C5C84800062A941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = thoen.com.ZaladaIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZaladaIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZaladaIOS";
+			};
+			name = Debug;
+		};
+		B0619B072C5C84800062A941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = thoen.com.ZaladaIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZaladaIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZaladaIOS";
+			};
+			name = Release;
+		};
+		B0619B092C5C84800062A941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = thoen.com.ZaladaIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZaladaIOS;
+			};
+			name = Debug;
+		};
+		B0619B0A2C5C84800062A941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = thoen.com.ZaladaIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZaladaIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0619AD42C5C847E0062A941 /* Build configuration list for PBXProject "ZaladaIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0619B002C5C84800062A941 /* Debug */,
+				B0619B012C5C84800062A941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0619B022C5C84800062A941 /* Build configuration list for PBXNativeTarget "ZaladaIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0619B032C5C84800062A941 /* Debug */,
+				B0619B042C5C84800062A941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0619B052C5C84800062A941 /* Build configuration list for PBXNativeTarget "ZaladaIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0619B062C5C84800062A941 /* Debug */,
+				B0619B072C5C84800062A941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0619B082C5C84800062A941 /* Build configuration list for PBXNativeTarget "ZaladaIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0619B092C5C84800062A941 /* Debug */,
+				B0619B0A2C5C84800062A941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B0619AE72C5C84800062A941 /* ZaladaIOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B0619AE82C5C84800062A941 /* ZaladaIOS.xcdatamodel */,
+			);
+			currentVersion = B0619AE82C5C84800062A941 /* ZaladaIOS.xcdatamodel */;
+			path = ZaladaIOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B0619AD12C5C847E0062A941 /* Project object */;
+}
