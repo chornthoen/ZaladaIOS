@@ -24,5 +24,5 @@ struct ContentView: View {
 
 
 #Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    ContentView()
 }

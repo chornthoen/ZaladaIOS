@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B0619ADD2C5C847E0062A941 /* ZaladaIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619ADC2C5C847E0062A941 /* ZaladaIOSApp.swift */; };
-		B0619ADF2C5C847E0062A941 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619ADE2C5C847E0062A941 /* ContentView.swift */; };
 		B0619AE12C5C84800062A941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0619AE02C5C84800062A941 /* Assets.xcassets */; };
 		B0619AE42C5C84800062A941 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0619AE32C5C84800062A941 /* Preview Assets.xcassets */; };
 		B0619AE62C5C84800062A941 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619AE52C5C84800062A941 /* Persistence.swift */; };
@@ -16,6 +15,7 @@
 		B0619AF32C5C84800062A941 /* ZaladaIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619AF22C5C84800062A941 /* ZaladaIOSTests.swift */; };
 		B0619AFD2C5C84800062A941 /* ZaladaIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619AFC2C5C84800062A941 /* ZaladaIOSUITests.swift */; };
 		B0619AFF2C5C84800062A941 /* ZaladaIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619AFE2C5C84800062A941 /* ZaladaIOSUITestsLaunchTests.swift */; };
+		B0619B0F2C5C88560062A941 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619B0E2C5C88560062A941 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		B0619AD92C5C847E0062A941 /* ZaladaIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZaladaIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0619ADC2C5C847E0062A941 /* ZaladaIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaladaIOSApp.swift; sourceTree = "<group>"; };
-		B0619ADE2C5C847E0062A941 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B0619AE02C5C84800062A941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0619AE32C5C84800062A941 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B0619AE52C5C84800062A941 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		B0619AF82C5C84800062A941 /* ZaladaIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZaladaIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0619AFC2C5C84800062A941 /* ZaladaIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaladaIOSUITests.swift; sourceTree = "<group>"; };
 		B0619AFE2C5C84800062A941 /* ZaladaIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaladaIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B0619B0E2C5C88560062A941 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,10 @@
 		B0619ADB2C5C847E0062A941 /* ZaladaIOS */ = {
 			isa = PBXGroup;
 			children = (
+				B0619B0D2C5C882B0062A941 /* ViewModels */,
+				B0619B0C2C5C88230062A941 /* Models */,
+				B0619B0B2C5C88150062A941 /* Views */,
 				B0619ADC2C5C847E0062A941 /* ZaladaIOSApp.swift */,
-				B0619ADE2C5C847E0062A941 /* ContentView.swift */,
 				B0619AE02C5C84800062A941 /* Assets.xcassets */,
 				B0619AE52C5C84800062A941 /* Persistence.swift */,
 				B0619AE72C5C84800062A941 /* ZaladaIOS.xcdatamodeld */,
@@ -131,6 +133,28 @@
 				B0619AFE2C5C84800062A941 /* ZaladaIOSUITestsLaunchTests.swift */,
 			);
 			path = ZaladaIOSUITests;
+			sourceTree = "<group>";
+		};
+		B0619B0B2C5C88150062A941 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0619B0E2C5C88560062A941 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B0619B0C2C5C88230062A941 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B0619B0D2C5C882B0062A941 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0619AE62C5C84800062A941 /* Persistence.swift in Sources */,
-				B0619ADF2C5C847E0062A941 /* ContentView.swift in Sources */,
 				B0619AE92C5C84800062A941 /* ZaladaIOS.xcdatamodeld in Sources */,
+				B0619B0F2C5C88560062A941 /* LoginView.swift in Sources */,
 				B0619ADD2C5C847E0062A941 /* ZaladaIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
