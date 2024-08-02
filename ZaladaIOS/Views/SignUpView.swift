@@ -1,13 +1,19 @@
+//
+//  SignUpView.swift
+//  ZaladaIOS
+//
+//  Created by Chorn Thoen on 8/2/24.
+//
+
 import SwiftUI
 
-struct LoginView: View {
+struct SignUpView: View {
+    @State private var fullName = ""
     @State private var email = ""
     @State private var password = ""
-    @State private var showAlert = false
-    @State private var alertMessage = ""
     @State private var isPasswordVisible = false
     @FocusState var focus: Bool
-    
+
     var body: some View {
         NavigationView {
             ScrollView {
@@ -16,22 +22,26 @@ struct LoginView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 150, height: 150)
-                        .padding(.top, 20)
+                        .padding(.top, 40)
                     
-                    Text("Welcome to **Zalada**")
+                    Text("Create an account")
                         .font(.title)
                         .padding(.top, 10)
                     
-                    Text("Login to your account.")
+                    Text("Sign up to get started.")
                         .font(.subheadline)
                     
                     VStack(spacing: 20) {
+                        TextField("Full name", text: $fullName)
+                            .padding(12)
+                            .background(Color(.systemGray6))
+                            .cornerRadius(8)
+                        
                         TextField("Email", text: $email)
                             .padding(12)
                             .background(Color(.systemGray6))
                             .cornerRadius(8)
                             .keyboardType(.emailAddress)
-                        
                         ZStack(alignment: .trailing) {
                             if isPasswordVisible {
                                 TextField("Password", text: $password)
@@ -55,18 +65,10 @@ struct LoginView: View {
                             }
                         }
                         
-                        HStack {
-                            Spacer()
-                            NavigationLink(destination: ForgetPasswordView()) {
-                                Text("Forget password?")
-                                    .underline()
-                            }
-                        }
-                        
                         Button(action: {
-                            validateSignIn()
+                            print("\(fullName) - \(email) - \(password)")
                         }) {
-                            Text("Sign in")
+                            Text("Sign up")
                                 .foregroundColor(.white)
                                 .frame(maxWidth: .infinity)
                                 .frame(height: 50)
@@ -75,61 +77,13 @@ struct LoginView: View {
                         }
                     }
                     .padding(.horizontal, 20)
-                    .padding(.top, 20)
-                    
-                    HStack {
-                        Text("Don't have an account?")
-                        
-                        NavigationLink(destination: SignUpView()) {
-                            Text("Sign up")
-                                .foregroundColor(.blue)
-                        }
-                    }
-                    .padding(.top, 20)
-                    
-                    Spacer()
+                    .padding(.bottom, 20)
                 }
             }
             .onTapGesture {
                 hideKeyboard()
             }
-            .navigationTitle("Login")
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarHidden(true)
-            .alert(isPresented: $showAlert) {
-                Alert(title: Text("Validation"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
-            }
         }
-    }
-    
-    private func validateSignIn() {
-        let isEmailValid = isValidEmail(email: email)
-        let isPasswordValid = isValidPassword(password: password)
-        
-        if !isEmailValid {
-            alertMessage = "Email is invalid"
-            showAlert = true
-            return
-        }
-        
-        if !isPasswordValid {
-            alertMessage = "Password must be at least 6 characters long"
-            showAlert = true
-            return
-        }
-        print("\(email) - \(password)")
-    }
-    
-    private func isValidEmail(email: String) -> Bool {
-        guard !email.isEmpty else { return false }
-        let emailValidationRegex = "^[\\p{L}0-9!#$%&'*+\\/=?^_`{|}~-][\\p{L}0-9.!#$%&'*+\\/=?^_`{|}~-]{0,63}@[\\p{L}0-9-]+(?:\\.[\\p{L}0-9-]{2,7})*$"
-        let emailValidationPredicate = NSPredicate(format: "SELF MATCHES %@", emailValidationRegex)
-        return emailValidationPredicate.evaluate(with: email)
-    }
-    
-    private func isValidPassword(password: String) -> Bool {
-        guard !password.isEmpty else { return false }
-        return password.count >= 6
     }
     
     private func hideKeyboard() {
@@ -138,5 +92,5 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView()
+    SignUpView()
 }

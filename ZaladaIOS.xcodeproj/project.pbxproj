@@ -16,6 +16,10 @@
 		B0619AFD2C5C84800062A941 /* ZaladaIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619AFC2C5C84800062A941 /* ZaladaIOSUITests.swift */; };
 		B0619AFF2C5C84800062A941 /* ZaladaIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619AFE2C5C84800062A941 /* ZaladaIOSUITestsLaunchTests.swift */; };
 		B0619B0F2C5C88560062A941 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619B0E2C5C88560062A941 /* LoginView.swift */; };
+		B0619B112C5C964F0062A941 /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619B102C5C964F0062A941 /* ForgetPasswordView.swift */; };
+		B0619B132C5C9A040062A941 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619B122C5C9A040062A941 /* SignUpView.swift */; };
+		B0619B152C5CB1350062A941 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619B142C5CB1350062A941 /* OTPView.swift */; };
+		B0619B182C5CB5310062A941 /* OTPModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0619B172C5CB5310062A941 /* OTPModifer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		B0619AFC2C5C84800062A941 /* ZaladaIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaladaIOSUITests.swift; sourceTree = "<group>"; };
 		B0619AFE2C5C84800062A941 /* ZaladaIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaladaIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B0619B0E2C5C88560062A941 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B0619B102C5C964F0062A941 /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
+		B0619B122C5C9A040062A941 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B0619B142C5CB1350062A941 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		B0619B172C5CB5310062A941 /* OTPModifer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPModifer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,7 @@
 		B0619ADB2C5C847E0062A941 /* ZaladaIOS */ = {
 			isa = PBXGroup;
 			children = (
+				B0619B162C5CB5040062A941 /* Unitil */,
 				B0619B0D2C5C882B0062A941 /* ViewModels */,
 				B0619B0C2C5C88230062A941 /* Models */,
 				B0619B0B2C5C88150062A941 /* Views */,
@@ -139,6 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				B0619B0E2C5C88560062A941 /* LoginView.swift */,
+				B0619B102C5C964F0062A941 /* ForgetPasswordView.swift */,
+				B0619B122C5C9A040062A941 /* SignUpView.swift */,
+				B0619B142C5CB1350062A941 /* OTPView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +167,14 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B0619B162C5CB5040062A941 /* Unitil */ = {
+			isa = PBXGroup;
+			children = (
+				B0619B172C5CB5310062A941 /* OTPModifer.swift */,
+			);
+			path = Unitil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,9 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0619B152C5CB1350062A941 /* OTPView.swift in Sources */,
 				B0619AE62C5C84800062A941 /* Persistence.swift in Sources */,
+				B0619B112C5C964F0062A941 /* ForgetPasswordView.swift in Sources */,
 				B0619AE92C5C84800062A941 /* ZaladaIOS.xcdatamodeld in Sources */,
+				B0619B182C5CB5310062A941 /* OTPModifer.swift in Sources */,
 				B0619B0F2C5C88560062A941 /* LoginView.swift in Sources */,
+				B0619B132C5C9A040062A941 /* SignUpView.swift in Sources */,
 				B0619ADD2C5C847E0062A941 /* ZaladaIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +485,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,6 +514,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
